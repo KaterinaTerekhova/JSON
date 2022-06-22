@@ -1,5 +1,8 @@
-My favorite movie is Strong nut
-My favorite soup opera is Frends
-Fish
-Summer
-Venys
+{
+  "favorite movie": "Strong nut",
+  "favorite soup-opera": "Frends",
+  "favorite food": "Fish",
+  "favorite seasons": ["Summer",
+                       "Winter"],
+  "favorite brend": "Venys",
+}

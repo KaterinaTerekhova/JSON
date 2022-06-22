@@ -1,40 +1,15 @@
-type tag_value_record = {
-  tag : string;
-  value : string;
-}
-
-type json_trace_item = {
-  level : int;
-  filename : string;
-  line_number : int;
-  description : string;
-  node_tags : tag_value_record list;
-}
-
-type loc = {
-  file: string;
-  line: int;
-  column: int;
-}
-
-type jsonbug = {
-  bug_class : string;
-  kind : string;
-  bug_type : string;
-  qualifier : string;
-  severity : string;
-  line: int;
-  procedure : string;
-  procedure_id : string;
-  file : string;
-  bug_trace : json_trace_item list;
-  key : int;
-  qualifier_tags : tag_value_record list;
-  hash : int;
-  ?dotty : string option;
-  ?infer_source_loc: loc option;
-}
-
-type json_trace = {
-  trace : json_trace_item list;
+{
+  "Bug_id": "ID_11",
+  "Title": "При введении невалидного значения в поле Name, рамка не подсвечивается красным цветом",
+  "Severity": "Minor",
+  "Priority": "Low",
+  "Environment": ["1) Windows 10 Pro, x.64.", 
+                  "2) Google Chrome version 102.0.5005.63"],
+  "Precondition": "Все поля Login кроме поля Name заполнены валидными значениями",
+  "STR": ["1. Перейти на http://itcareer.com", 
+          "2. Ввести 1 латинскую букву в поле Name",
+	        "3. Нажать Submit"],		
+  "AR": "Рамка не подсвечивается красным цветом",
+  "ER": "Рамка поля Name должна стать красной",
+  "Attachments: 0",
 }

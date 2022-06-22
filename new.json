@@ -1,4 +1,6 @@
-Terekhova Ekaterina
-41
-no pets
-expected salary is 65K
+{
+  "name": "Terekhova Ekaterina",
+  "age": 41,
+  "pets": "no pets",
+  "expected salary": 90000
+}
